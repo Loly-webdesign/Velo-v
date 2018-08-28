@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Vélo'V Lyon</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <!-- Css files -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!--Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Open Graph data / Facebook -->
+        <meta property="og:title" content="Vélo'V Lyon | La carte interactive de location de vélos de Lyon" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://velo-v.loly-webdesign.fr/" />
+        <meta property="og:image" content="images/logo.png" />
+        <meta property="og:description" content="La carte interactive de location de vélos sur Lyon " />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee|Karla|Libre+Franklin|Open+Sans">
+    </head>
+    <body>
+<!-- En-tête de la page / navigation -->
+        <header>
+<!-- Menu hamburger -->
+           	<img id="logo" src="images/logo.png" alt="logo Vélo'V" />
+			<div class="open">
+			  <span class="cls"></span>
+			  <span>
+				<ul class="sub-menu ">
+				  <li> <a href="#home"><i class="fa fa-home" style="font-size:18px"></i> Accueil</a> </li>
+				  <li> <a href="#p2"><i class="fa fa-bicycle" style="font-size:20px"></i> Mon Vélo'V</a> </li>
+				  <li> <a href="#divReservation"><i class="far fa-calendar-check" style="font-size:20px"></i> Mes Réservations</a> </li>
+				</ul>
+			  </span>
+			  <span class="cls"></span>
+			</div>
+        </header>
+<!-- Contenu du corps de la page-->
+        <main id="home">
+<!-- Partie Intro / présentation -->
+			<section id="welcome">
+				<h1>
+				<strong>Vélo'<em>v</em></strong> : Réservation de vélos en libre service sur Lyon
+				</h1>
+				<h3>Bienvenue !</h3>
+				<p>Louez et restituez votre vélo sur toutes les bornes de la ville.<br>
+				Accessible 24h/24h 7jrs/7jrs avec ou sans abonnement, avec Velo'V évadez vous l'esprit tranquille !
+				</p>
+			</section>
+<!-- Partie diaporamas -->
+            <section id="diapo">
+                <div id="gallery">
+                    <img id="img1" src="images/consulter.jpg" class="img gauche">   
+                    <img id="img3" src="images/reserv.jpg" class="img gauche">
+                    <img id="img2" src="images/accueil.jpg" class="img centre"> 
+                    <img id="img4" src="images/confirmer.jpg" class="img droite">
+                    <img id="img5" src="images/chrono.jpg" class="img droite">
+                </div>
+            </section>	
+<!-- Partie map + infos stations -->
+			<h2 id="p2">Carte de réservation des vélos</h2>
+			<section id="legende" class="toggle">
+				<div class="less">
+        			<a class="button-read-more button-read" href="#read">Afficher la légende<br><i class="fas fa-sort-down"></i></a>
+        			<a class="button-read-less button-read" href="#read"><i class="fas fa-sort-up"></i><br>Replier</a>
+    			</div>
+    			<div class="more">
+					<h4>Légende des markers de la carte</h4>
+					<img classe="ico" src="images/0.png" alt="100% à 75% de vélos disponibles"/>
+					<label>100% à 75% de vélos disponibles</label>
+					<img classe="ico" src="images/50.png" alt="50% de vélos disponibles"/>
+					<label>50% de vélos disponibles</label>
+					<img classe="ico" src="images/75.png" alt="25% de vélos disponibles"/>
+					<label>25% de vélos disponibles</label>
+					<img classe="ico" src="images/100.png" alt="Aucuns vélos disponibles"/>
+					<label>Aucuns vélos disponibles</label>
+					<img classe="ico" src="images/station_closed.png" alt="Station fermée"/>
+					<label>Station fermée</label>
+				</div>
+			</section>
+			<button type="button" id="actual">Actualiser</button>
+			<section id="carte_reservation">
+				<!-- Div pour l'affichage de la carte google -->
+				<div id="map"></div>
+				<!-- Div pour l'affichage des infos stations -->
+				<div id="reservation">
+					<h3>Informations sur la station</h3>
+					<ul>
+						<li>Nom de la station : <span id="nomStation"></span></li>
+						<li>Adresse : <span id="adresse"></span></li>
+						<li>Etat : <span id="etatStation"></span></li>
+						<li>Place(s) totale(s) : <span id="placesTotales"></span></li>
+						<li>Place(s) disponible(s) : <span id="placesDispo"></span></li>
+						<li>Vélo(s) disponible(s) : <span id="velosDispo"></span></li>
+					</ul>
+					<span id="text_signature">Signature électronique* :</span>
+					<br>
+					<canvas id="canvas">
+						<p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+					</canvas>
+					<div class="buttons">
+						<span class="buttonClose">Fermer</span>
+						<span class="buttonEfface">Effacer</span>
+						<span class="buttonReservation">Réserver</span>
+					</div>
+				</div>
+			</section>
+		</main>
+<!-- Pied de page -->
+		<footer>
+			<!-- PArtie réservation -->
+			<section id="divReservation">
+				<span id="ligneStation"></span><br>
+				<span id="ligneAdresse"></span><br>
+				<span id="compteur"></span><br>
+				<span id="buttonAnnul">Annuler</span>
+			</section>
+			<section id="credit">
+        	<p><strong class="fa fa-copyright" aria-hidden="true"> 
+				Eloïse RUIZ-RODRIGUEZ | 2018</strong><br>
+            	Dans le cadre de ma formation avec OpenClassrooms.<br>
+				Ce site n'a donc aucun but commercial, simplement pédagogique.
+            </p> 
+			</section>
+        </footer>
+<!-- Scripts -->
+	<!--Chargement des fichiers JS Jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Chargement du script d'initialisation globale-->
+    <script src="js/main.js"></script>
+	<!--Chargement du script du menu burger-->
+    <script src="js/burger.js"></script>
+	<!--Chargement du script du slider-->
+    <script src="js/slider.js"></script>
+    <!--Chargement du script de la map-->
+    <script src="js/map.js"></script>
+    <!--Chargement du fichier JS des markerClusterer-->
+    <script src="js/markerclusterer.js"></script>
+    <!--Chargement du script des markers-->
+    <script src="js/markers.js"></script>
+    <!--Chargement du script du canvas-->
+    <script src="js/canvas.js"></script>
+	<!--Chargement du script du timer-->
+    <script src="js/timer.js"></script>
+	<!--Chargement de l'affichage de la carte google map avec clé API-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALcFp3Rir4x_HdXJG26gxR00wd5_dDWr4&callback=initGlobal"></script>
+  </body>
+</html>
