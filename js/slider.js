@@ -150,7 +150,6 @@ $ (function () {
   slider.init ();
 });
 
-//Boutton de réinitialisation
   window.onload = function () {
   mapsResa.initialiser ();
   sessionTemp.controlStorage ();
