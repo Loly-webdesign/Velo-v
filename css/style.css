@@ -1,75 +1,65 @@
 /******* Elements principaux *******/
-body 
-{ 
-    margin: 0; 
-    padding: 0;
-	font-family: 'Libre Franklin', 'Karla', 'Source Serif Pro', 'Open Sans', serif;
-	background-color: whitesmoke;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', 'Karla', 'Source Serif Pro', 'Open Sans', serif;
+  background-color: whitesmoke;
 }
-main
-{ 
-	margin: 0;
-	padding: 0;
+main {
+  margin: 0;
+  padding: 0;
 }
-p
-{
-	color: firebrick;
+p {
+  color: firebrick;
 }
-h1, h2, h3
-{
-	font-family: 'ABeeZee', 'Exo', 'Open Sans', serif;
-	text-transform: uppercase;
-	text-align: center;
+h1,
+h2,
+h3 {
+  font-family: 'ABeeZee', 'Exo', 'Open Sans', serif;
+  text-transform: uppercase;
+  text-align: center;
 }
-h1
-{
-	padding-top: 50px;
-	font-size: 2.4em;
-	margin:0;
+h1 {
+  padding-top: 50px;
+  font-size: 2.4em;
+  margin: 0;
 }
-h2
-{
-	font-size: 2.1em;
-	color: firebrick;
-	padding-top: 25px;
+h2 {
+  font-size: 2.1em;
+  color: firebrick;
+  padding-top: 25px;
 }
-h3
-{
-	font-size: 1.5em;
-	color: firebrick;
+h3 {
+  font-size: 1.5em;
+  color: firebrick;
 }
-h4
-{
-	font-size: 1.3em;
-	color: firebrick;
+h4 {
+  font-size: 1.3em;
+  color: firebrick;
 }
 /******* header / menu *******/
-#logo
-{
-	position: fixed;
-	top: 20px;
-	right: 80px;
-	display: block;
-	z-index: 20;
+#logo {
+  position: fixed;
+  top: 20px;
+  right: 80px;
+  display: block;
+  z-index: 20;
 }
-i 
-{
-	color: darkred;
+i {
+  color: darkred;
 }
-.open
-{
-  	position: fixed;
-	top: 10px;
-	right: 25px;
-	width: 35px;
-	height: 30px;
-	display: block;
-	cursor: pointer;
-	z-index: 10;
-	transition: opacity 0.2s linear;
+.open {
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  width: 35px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.2s linear;
 }
-.open span 
-{
+.open span {
   display: block;
   float: left;
   clear: both;
@@ -83,21 +73,17 @@ i
   overflow: hidden;
   transition: all 0.4s ease;
 }
-.open span:nth-child(1) 
-{
+.open span:nth-child(1) {
   margin-top: 10px;
   z-index: 9;
 }
-.open span:nth-child(2) 
-{ 
-	margin-top: 25px; 
+.open span:nth-child(2) {
+  margin-top: 25px;
 }
-.open span:nth-child(3) 
-{ 
-	margin-top: 40px; 
+.open span:nth-child(3) {
+  margin-top: 40px;
 }
-.sub-menu 
-{
+.sub-menu {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   height: 0;
   width: 0;
@@ -109,62 +95,63 @@ i
   z-index: 18;
   overflow: hidden;
 }
-.sub-menu li 
-{
-	font-weight: bold;
-  	display: block;
-  	float: right;
-  	clear: both;
-  	height: auto;
-  	margin-right: -160px;
-  	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.sub-menu li {
+  font-weight: bold;
+  display: block;
+  float: right;
+  clear: both;
+  height: auto;
+  margin-right: -160px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.sub-menu li:first-child  
-{ 
-	margin-top: 180px; 
+.sub-menu li:first-child {
+  margin-top: 180px;
 }
-.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
-.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
-.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
-.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
-.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+.sub-menu li:nth-child(1) {
+  -webkit-transition-delay: 0.05s;
+}
+.sub-menu li:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+}
+.sub-menu li:nth-child(3) {
+  -webkit-transition-delay: 0.15s;
+}
+.sub-menu li:nth-child(4) {
+  -webkit-transition-delay: 0.2s;
+}
+.sub-menu li:nth-child(5) {
+  -webkit-transition-delay: 0.25s;
+}
 
-.sub-menu li a 
-{
-	text-decoration: none;
-  	color: black;
-  	font-size: 1.2em;
-  	width: 100%;
-  	display: block;
-	float: left;
-  	line-height: 40px;
+.sub-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
 }
-.sub-menu li a:hover
-{
-	color: rgb(198, 35, 35);
+.sub-menu li a:hover {
+  color: rgb(198, 35, 35);
 }
-.oppenned .sub-menu 
-{
+.oppenned .sub-menu {
   opacity: 1;
   height: 400px;
   width: 400px;
 }
-.oppenned span:nth-child(2) 
-{ 
-	overflow: visible; 
+.oppenned span:nth-child(2) {
+  overflow: visible;
 }
 .oppenned span:nth-child(1),
-.oppenned span:nth-child(3) 
-{
+.oppenned span:nth-child(3) {
   z-index: 100;
   transform: rotate(45deg);
 }
-.oppenned span:nth-child(1) 
-{ 
-	transform: rotate(45deg) translateY(12px) translateX(12px); 
+.oppenned span:nth-child(1) {
+  transform: rotate(45deg) translateY(12px) translateX(12px);
 }
-.oppenned span:nth-child(2) 
-{
+.oppenned span:nth-child(2) {
   height: 400px;
   width: 400px;
   right: -160px;
@@ -172,415 +159,358 @@ i
   border-radius: 50%;
   background-color: rgba(88, 88, 88, 0.9);
 }
-.oppenned span:nth-child(3) 
-{ 
-	transform: rotate(-45deg) translateY(-10px) translateX(10px); 
+.oppenned span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px) translateX(10px);
 }
-.oppenned li 
-{ 
-	margin-right: 168px; 
+.oppenned li {
+  margin-right: 168px;
 }
 /******* Accueil *******/
-strong, em
-{
-	font-size: 1.1em;
-	text-transform: none;
+strong,
+em {
+  font-size: 1.1em;
+  text-transform: none;
 }
-em
-{
-	color: red;
-	font-style: normal;
+em {
+  color: red;
+  font-style: normal;
 }
-#welcome
-{
-	margin:0;
+#welcome {
+  margin: 0;
 }
-#welcome p
-{
-	padding: 0 5px 20px 5px;
-	font-size: 1.2em;
-	text-align: center;
-	color: firebrick;
+#welcome p {
+  padding: 0 5px 20px 5px;
+  font-size: 1.2em;
+  text-align: center;
+  color: firebrick;
 }
 /******* Diaporama *******/
-#diapo
-{
-    height: 450px;
-    width: 100%;
-    overflow: hidden;
-    box-shadow: 0px 10px 5px #656565;
-	margin-bottom: 10px;
-	padding: 20px auto;
+#diapo {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 10px 5px #656565;
+  margin-bottom: 10px;
+  padding: 20px auto;
 }
-#gallery
-{
-    width: 100%;
-    padding: 15px 0 25px 0;
-    perspective: 800px;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    perspective: 800px;
-    position: relative;
+#gallery {
+  width: 100%;
+  padding: 15px 0 25px 0;
+  perspective: 800px;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  position: relative;
 }
-.img
-{
-    position: absolute;
-    width: 25%;
-    box-shadow: 0px 0px 7px 4px #000000;
-    cursor: pointer;
+.img {
+  position: absolute;
+  width: 25%;
+  box-shadow: 0px 0px 7px 4px #000000;
+  cursor: pointer;
 }
-.img:hover
-{
-    box-shadow: 0px 0px 7px 4px darkred;
+.img:hover {
+  box-shadow: 0px 0px 7px 4px darkred;
 }
-#img2
-{
-    box-shadow: 0px 0px 7px 4px #656565;
+#img2 {
+  box-shadow: 0px 0px 7px 4px #656565;
 }
-.gauche
-{
-    left: 8%;
-    transform: rotateY(30deg) skewY(5deg) translateX(150px);
-    -webkit-transform: rotateY(30deg) skewY(5deg) translateX(150px);
-    -ms-transform: rotateY(30deg) skewY(5deg) translateX(150px);
-    -moz-transform: rotateY(30deg) skewY(5deg) translateX(150px);
-    transition: 1s;
+.gauche {
+  left: 8%;
+  transform: rotateY(30deg) skewY(5deg) translateX(150px);
+  -webkit-transform: rotateY(30deg) skewY(5deg) translateX(150px);
+  -ms-transform: rotateY(30deg) skewY(5deg) translateX(150px);
+  -moz-transform: rotateY(30deg) skewY(5deg) translateX(150px);
+  transition: 1s;
 }
-.centre
-{
-   left: 35%;
-    z-index: 10;
-    transform: rotateY(0deg) skewY(0deg) translateX(0px);
-    -webkit-transform: rotateY(0deg) skewY(0deg) translateX(0px);
-    -ms-transform: rotateY(0deg) skewY(0deg) translateX(0px);
-    -moz-transform: rotateY(0deg) skewY(0deg) translateX(0px);
-    transition: 1s;
+.centre {
+  left: 35%;
+  z-index: 10;
+  transform: rotateY(0deg) skewY(0deg) translateX(0px);
+  -webkit-transform: rotateY(0deg) skewY(0deg) translateX(0px);
+  -ms-transform: rotateY(0deg) skewY(0deg) translateX(0px);
+  -moz-transform: rotateY(0deg) skewY(0deg) translateX(0px);
+  transition: 1s;
 }
-.droite
-{
-   left: 65%;
-   transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
-   -webkit-transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
-   -ms-transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
-   -moz-transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
-    transition: 1s;
+.droite {
+  left: 65%;
+  transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
+  -webkit-transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
+  -ms-transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
+  -moz-transform: rotateY(-30deg) skewY(-5deg) translateX(-150px);
+  transition: 1s;
 }
 /*******   Map + réservation   *******/
-#carte_reservation
-{
-    display: flex;
-    justify-content: space-around;
+#carte_reservation {
+  display: flex;
+  justify-content: space-around;
 }
-#map 
-{
-    width: 100%;
-    height: 700px;
-    border: 0;
-    background-color: lightgray;
+#map {
+  width: 100%;
+  height: 700px;
+  border: 0;
+  background-color: lightgray;
 }
-#actual
-{
-	text-decoration: none;
-	text-align: center;
-    width: 90px;
-    padding: 8px;
-	margin-left: 10px;
-	border: none;
-	border-radius: 5px;
-	border-bottom: solid 2px rgb(153, 9, 9);
-	transition: all 0.15s ease-out;
-		-webkit-transition: all 0.15s ease-out;
-		-moz-transition: all 0.15s ease-out;
-		-o-transition: all 0.15s ease-out;
-	background-color: rgb(153, 9, 9);
-	color: whitesmoke;
-	margin-bottom: 10px;
+#actual {
+  text-decoration: none;
+  text-align: center;
+  width: 90px;
+  padding: 8px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: solid 2px rgb(153, 9, 9);
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  background-color: rgb(153, 9, 9);
+  color: whitesmoke;
+  margin-bottom: 10px;
 }
-#actual:hover
-{
-   	cursor: pointer;
-    transform: translateY(1px);
-	background-color: whitesmoke;
-	border: solid 0.4px rgb(153, 9, 9); 
-	border-bottom: solid 2px rgb(153, 9, 9);
-	color: rgb(153, 9, 9);
+#actual:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: whitesmoke;
+  border: solid 0.4px rgb(153, 9, 9);
+  border-bottom: solid 2px rgb(153, 9, 9);
+  color: rgb(153, 9, 9);
 }
 /*******   Infos réservation   *******/
-#reservation 
-{
-    display: none;
-    background-color: rgb(235, 239, 243);
-    opacity: 0.8;
-    top: 20px;
-    width: 350px;
-    height: 680px;
-    padding: 10px;
-	margin: 0;
-    border: 2px solid lightgray;
+#reservation {
+  display: none;
+  background-color: rgb(235, 239, 243);
+  opacity: 0.8;
+  top: 20px;
+  width: 350px;
+  height: 680px;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid lightgray;
 }
-#reservation li 
-{
-    color: black;
-    list-style: none;
-    margin-bottom: 1.5em;
-    font-weight: bold;
+#reservation li {
+  color: black;
+  list-style: none;
+  margin-bottom: 1.5em;
+  font-weight: bold;
 }
-#reservation li span 
-{
-    font-weight: normal;
-    color: darkred;
-	font-weight: bold;
+#reservation li span {
+  font-weight: normal;
+  color: darkred;
+  font-weight: bold;
 }
-.buttons 
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
-.buttonReservation 
-{
-    padding: 5px 15px;
-    background-color: darkgreen;
-    border-radius: 7px;
-    color: whitesmoke;
-    cursor: pointer;
-	text-align: center;
-	border: none;
-	border-bottom: solid 2px darkgreen;
-	transition: all 0.15s ease-out;
-		-webkit-transition: all 0.15s ease-out;
-		-moz-transition: all 0.15s ease-out;
-		-o-transition: all 0.15s ease-out;
+.buttonReservation {
+  padding: 5px 15px;
+  background-color: darkgreen;
+  border-radius: 7px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-bottom: solid 2px darkgreen;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
 }
-.buttonReservation:hover
-{
-   	cursor: pointer;
-    transform: translateY(1px);
-	background-color: whitesmoke;
-	border: solid 0.4px darkgreen; 
-	border-bottom: solid 2px darkgreen;
-	color: darkgreen;
+.buttonReservation:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: whitesmoke;
+  border: solid 0.4px darkgreen;
+  border-bottom: solid 2px darkgreen;
+  color: darkgreen;
 }
-.buttonClose 
-{
-    padding: 5px 15px;
-    background-color: darkred;
-    border-radius: 7px;
-    color: whitesmoke;
-    cursor: pointer;
-	text-align: center;
-	border: none;
-	border-bottom: solid 2px darkred;
-	transition: all 0.15s ease-out;
-		-webkit-transition: all 0.15s ease-out;
-		-moz-transition: all 0.15s ease-out;
-		-o-transition: all 0.15s ease-out;
+.buttonClose {
+  padding: 5px 15px;
+  background-color: darkred;
+  border-radius: 7px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-bottom: solid 2px darkred;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
 }
-.buttonClose:hover
-{
-   	cursor: pointer;
-    transform: translateY(1px);
-	background-color: whitesmoke;
-	border: solid 0.4px darkred; 
-	border-bottom: solid 2px darkred;
-	color: darkred;
+.buttonClose:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: whitesmoke;
+  border: solid 0.4px darkred;
+  border-bottom: solid 2px darkred;
+  color: darkred;
 }
-.buttonEfface 
-{
-    padding: 5px 15px;
-    background-color: darkblue;
-    border-radius: 7px;
-    color: white;
-    cursor: pointer;
-	text-align: center;
-	border: none;
-	border-bottom: solid 2px darkblue;
-	transition: all 0.15s ease-out;
-		-webkit-transition: all 0.15s ease-out;
-		-moz-transition: all 0.15s ease-out;
-		-o-transition: all 0.15s ease-out;
+.buttonEfface {
+  padding: 5px 15px;
+  background-color: darkblue;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-bottom: solid 2px darkblue;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
 }
-.buttonEfface:hover
-{
-   	cursor: pointer;
-    transform: translateY(1px);
-	background-color: whitesmoke;
-	border: solid 0.4px darkblue; 
-	border-bottom: solid 2px darkblue;
-	color: darkblue;
+.buttonEfface:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: whitesmoke;
+  border: solid 0.4px darkblue;
+  border-bottom: solid 2px darkblue;
+  color: darkblue;
 }
-#buttonAnnul 
-{
-	margin:10px;
-	padding: 5px 15px;
-    background-color: darkred;
-    border-radius: 7px;
-    color: whitesmoke;
-    cursor: pointer;
-    line-height: 2.5;
-	text-align: center;
-	border: none;
-	border-bottom: solid 2px rgb(153, 9, 9);
-	transition: all 0.15s ease-out;
-		-webkit-transition: all 0.15s ease-out;
-		-moz-transition: all 0.15s ease-out;
-		-o-transition: all 0.15s ease-out;
+#buttonAnnul {
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: darkred;
+  border-radius: 7px;
+  color: whitesmoke;
+  cursor: pointer;
+  line-height: 2.5;
+  text-align: center;
+  border: none;
+  border-bottom: solid 2px rgb(153, 9, 9);
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
 }
-#buttonAnnul:hover
-{
-   	cursor: pointer;
-    transform: translateY(1px);
-	background-color: whitesmoke;
-	border: solid 0.4px rgb(153, 9, 9); 
-	border-bottom: solid 2px rgb(153, 9, 9);
-	color: rgb(153, 9, 9);
+#buttonAnnul:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: whitesmoke;
+  border: solid 0.4px rgb(153, 9, 9);
+  border-bottom: solid 2px rgb(153, 9, 9);
+  color: rgb(153, 9, 9);
 }
-#divReservation 
-{
-    display: block;
-    width: auto;
-    margin: 0, 15px;
-    height: 120px;
-    background-color: black;
-    color: white;
-    font-size: 1em;
-    text-align: center;
-    padding-top: 10px;
-    border-top: 2px solid firebrick;
-    border-bottom: 2px solid firebrick;
+#divReservation {
+  display: block;
+  width: auto;
+  margin: 0, 15px;
+  height: 120px;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 2px solid firebrick;
+  border-bottom: 2px solid firebrick;
 }
 #ligneStation,
-#ligneAdresse 
-{
-    color: red;
-    font-size: 1.2em;
+#ligneAdresse {
+  color: red;
+  font-size: 1.2em;
 }
-#canvas 
-{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 1px solid black;
+#canvas {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
 }
-#compteur 
-{
-    font-size: 1.5em;
-    color: white;
+#compteur {
+  font-size: 1.5em;
+  color: white;
 }
-.marque 
-{
-    color: black;
+.marque {
+  color: black;
 }
 /*******   LEGENDE   *******/
-#legende 
-{
-	text-align: center;
-	padding-bottom: 15px;
+#legende {
+  text-align: center;
+  padding-bottom: 15px;
 }
-.less.active .button-read-more, .button-read-less  
-{
-	display: none
+.less.active .button-read-more,
+.button-read-less {
+  display: none;
 }
-.less.active .button-read-less 
-{
-	display: block
+.less.active .button-read-less {
+  display: block;
 }
-.less a
-{
-	color: black;
-    font-weight: bold;
-	font-size: 1.1em;
+.less a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
 }
-.more 
-{
-	margin-top: 10px
+.more {
+  margin-top: 10px;
 }
 /*******   FOOTER   *******/
-footer
-{
-    text-align: center;
-	padding: 3px;
-	margin: 0;
-	background-color: black;
-	color: whitesmoke;
+footer {
+  text-align: center;
+  padding: 3px;
+  margin: 0;
+  background-color: black;
+  color: whitesmoke;
 }
-footer p
-{
-	color: whitesmoke;
+footer p {
+  color: whitesmoke;
 }
 /******* Media queries *******/
-@media screen and (max-width: 479px)  
-{
-    #reservation 
-	{
-        width: 320px;
-		padding:0;
-    }
-    #canvas 
-	{
-        width: 90%;
-    }
-}  
-@media all and (max-width : 767px) 
-{
-	#carte_reservation 
-	{
-        display: flex;
-		flex-direction: column;
-		overflow: hidden;
-    }
-	#reservation
-	{
-		width: 100%;
-		text-align: center;
-	}
-	#divReservation 
-	{
-        width: 95%;
-        height: auto;
-        margin: auto;
-    }
-	h1
-	{
-		font-size: 1.6em;
-	}
-	.img
-	{
-    	width: 40%;
-    	box-shadow: 0px 0px 5px 2px black;
-    }
-    .centre
-	{
-        left:30%;
-    }
-    .droite
-	{
-        transform: rotateY(-30deg) skewY(-5deg) translateX(-100px);
-    }
-    .gauche
-	{
-        transform: rotateY(30deg) skewY(5deg) translateX(45px);
-    }
-	#diapo
-	{
-		height: 250px;
-	}
-	.more
-	{
-		display: flex;
-		flex-direction: column;
-	}
-	#legende img
-	{
-		width: 30px;
-		margin: auto;
-	}
+@media screen and (max-width: 479px) {
+  #reservation {
+    width: 320px;
+    padding: 0;
+  }
+  #canvas {
+    width: 90%;
+  }
 }
-@media screen and (max-width: 1024px)
-{
-	h2
-	{
-		font-size: 1.5em;
-	}
+@media all and (max-width: 767px) {
+  #carte_reservation {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #reservation {
+    width: 100%;
+    text-align: center;
+  }
+  #divReservation {
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  .img {
+    width: 40%;
+    box-shadow: 0px 0px 5px 2px black;
+  }
+  .centre {
+    left: 30%;
+  }
+  .droite {
+    transform: rotateY(-30deg) skewY(-5deg) translateX(-100px);
+  }
+  .gauche {
+    transform: rotateY(30deg) skewY(5deg) translateX(45px);
+  }
+  #diapo {
+    height: 250px;
+  }
+  .more {
+    display: flex;
+    flex-direction: column;
+  }
+  #legende img {
+    width: 30px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 1.5em;
+  }
 }
