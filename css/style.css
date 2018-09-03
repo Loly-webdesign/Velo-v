@@ -108,19 +108,19 @@ i {
   margin-top: 180px;
 }
 .sub-menu li:nth-child(1) {
-  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
 }
 .sub-menu li:nth-child(2) {
-  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .sub-menu li:nth-child(3) {
-  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
 .sub-menu li:nth-child(4) {
-  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .sub-menu li:nth-child(5) {
-  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 .sub-menu li a {
